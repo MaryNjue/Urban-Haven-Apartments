@@ -201,90 +201,158 @@ width: 100%;
 
 /* properties */
 
-.properties{
+.properties {
     background: #fbfbfb;
     border-radius: 2%;
-    }
-    
-    
-    .heading{
+}
+
+.heading {
     text-align: center;
-    margin-bottom:2rem;
-    }
-    .heading span{
-    text-transform:capitalize;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    text-transform: capitalize;
     font-weight: 500;
     color: var(--main-color);
-    }
-    .heading h2{
+}
+
+.heading h2 {
     text-transform: capitalize;
     font-size: 1.7rem;
-    }
-    .heading p{
+}
+
+.heading p {
     font-size: 0.94855rem;
     margin-top: 10px;
-    }
-    
-    
-    .properties-container{
+}
+
+.properties-container {
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,auto));
-    gap:3rem;
-    padding:0 20px;
-    }
-    .properties-container .box{
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 3rem;
+    padding: 0 20px;
+}
+
+.properties-container .box {
     background: var(--bg-color);
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
-    padding:20px;
+    padding: 20px;
     cursor: pointer;
-    }
-    .properties-container .box:hover{
+}
+
+.properties-container .box:hover {
     transform: translateY(-10px);
-    transition:0.5s;
-    
-    }
-    .properties-container .box img{
-    border-radius:1rem;
+    transition: 0.5s;
+}
+
+.properties-container .box img {
+    border-radius: 1rem;
     object-fit: cover;
     object-position: center;
     height: 220px;
-    }
-    .properties-container .box h3{
+}
+
+.properties-container .box h3 {
     font-size: 1rem;
     float: right;
-    font-weight:600;
+    font-weight: 600;
     text-transform: capitalize;
-    
-    }
-    .properties-container .box .content{
+}
+
+.properties-container .box .content {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    }
-    .properties-container .box .content .text h3{
-    font-weight:600;
-    }
-    .properties-container .box .content .text p{
+}
+
+.properties-container .box .content .text h3 {
+    font-weight: 600;
+}
+
+.properties-container .box .content .text p {
     font-size: 0.8rem;
     text-transform: capitalize;
-    }
-    .properties-container .box .content .icon{
-    display: flex;
-    align-items: center;
-    column-gap:1rem;
-    }
-    .properties-container .box .content .icon .fa-solid{
-    display: flex;
-    align-items: center;
-    font-size:20px;
-    }
-    
-    .properties-container .box .content .icon span{
+}
+
+/* Removed icon-related styles */
+/* Contact Form */
+
+.contact {
+    background: #f4f4f4;
+    border-radius: 2%;
+    padding: 2rem;
+}
+
+.contact .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact .heading span {
+    text-transform: capitalize;
     font-weight: 500;
-    font-size:12px;
-    margin-left: 5px;
-    }
+    color: var(--main-color);
+}
+
+.contact .heading h2 {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+.contact .heading p {
+    font-size: 0.94855rem;
+    margin-top: 10px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-container .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contact-container .form-group input,
+.contact-container .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-container .form-group textarea {
+    resize: vertical;
+}
+
+.contact-container button {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-container button:hover {
+    background: darken(var(--main-color), 10%);
+}
+
     
 
     
