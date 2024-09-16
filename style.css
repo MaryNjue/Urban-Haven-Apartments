@@ -67,6 +67,26 @@ body{
       gap: 2rem;
     }}
 /*end of header stylings*/
+/* scroll to top button */
+.scroll-to-top {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    --size: 5rem;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+  
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    z-index: 1000000000000;
+  }
 /* home */
 .home{
 margin-top:1rem;
@@ -145,6 +165,11 @@ width: 100%;
 .about-text h2 {
     font-size: 1.7rem;
 }
+@media screen and (max-width: 62.5em) {
+    .about_container {
+      display: block;
+      text-align: center; 
+    }}
 /* Amenities Section */
 .amenities-heading {
     margin-top: 4rem;
@@ -276,7 +301,11 @@ width: 100%;
     text-transform: capitalize;
 }
 
-/* Removed icon-related styles */
+@media screen and (max-width: 38.19em) {
+    .properties-container {
+      display: block;
+    }}
+  
 /* Contact Form */
 
 .contact {
